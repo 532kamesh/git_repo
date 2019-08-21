@@ -3,7 +3,7 @@ pipeline{
                 stages{
                 stage('clone'){
                                 steps{
-                                checkout SCM
+                                'checkout SCM'
                         }
                 stage('build'){
                         sh 'mvn install'
